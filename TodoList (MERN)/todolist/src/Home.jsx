@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useState} from "react";
+import Create from './Create'
 
 function Home(){
     const [todos, setTodos] = useState([])
@@ -7,12 +8,12 @@ function Home(){
             <h2>ToDo List</h2>
             <Create/>
             {
-                todos.length === 0
+                todos.length === 0 //empty array
                 ?
                 <div><h2>No Record</h2></div>
                 :
                 todos.map(todo=>(
-                    <div>
+                   <div>
                         {todo}
                     </div>
                 ))
