@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import axios from 'axios'
 
 function Create(){
-    const [tast, setTask] = useState([])
+    const [task, setTask] = useState('')
 
     const handleAdd = ()=> {
         if (!task){ //prevents empty tasks from being added
@@ -25,4 +25,4 @@ function Create(){
     )
 }
 
-export default Create
+export default Create;
